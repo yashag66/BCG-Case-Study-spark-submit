@@ -1,0 +1,20 @@
+{
+	"INPUT_FILE_PATH" : 
+	{
+		"PRIMARY_PERSON_DATA_PATH":"./Data/IP_Data/Primary_Person_use.csv",
+		"UNITS_DATA_PATH":"./Data/IP_Data/Units_use.csv",
+		"CHARGES_DATA_PATH":"./Data/IP_Data/Charges_use.csv",
+		"DAMAGES_DATA_PATH":"./Data/IP_Data/Damages_use.csv"
+	},
+	"OUTPUT_FILE_PATH" :
+	{
+		"ANALYSIS_1":"./Data/OP_Data/Analysis_1.csv",
+		"ANALYSIS_2":"./Data/OP_Data/Analysis_2.csv",
+		"ANALYSIS_3":"./Data/OP_Data/Analysis_3.csv",
+		"ANALYSIS_4":"./Data/OP_Data/Analysis_4.csv",
+		"ANALYSIS_5":"./Data/OP_Data/Analysis_5.csv",
+		"ANALYSIS_6":"./Data/OP_Data/Analysis_6.csv",
+		"ANALYSIS_7":"./Data/OP_Data/Analysis_7.csv",
+		"ANALYSIS_8":"./Data/OP_Data/Analysis_8.csv"
+	}
+}
