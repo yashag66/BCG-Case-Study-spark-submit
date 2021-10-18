@@ -15,7 +15,7 @@ from dependencies.transform import Transform
 
 def main():
     """
-    Start Spark application and get Spark session.(Main Job Definition)
+    Get Spark Session and execute the Spark job.(Main Job Definition)
     return: None
     """
     # 
@@ -49,9 +49,9 @@ def main():
 
 def extract_data(spark, input_config):
     """Load data from CSV file format.
-    :param spark: Spark session object.
-    :param input_config: Configs to read data using filepaths
-    :return: Spark DataFrame.
+    param spark: Spark session object.
+    param input_config: Configs to read data using filepaths
+    return: Spark DataFrame.
     """
 
     def read_csv_df(path='', header=True, inferSchema=True):
@@ -95,8 +95,8 @@ def extract_data(spark, input_config):
 def transform_data(df_collection):
     """
     Transform original dataset.
-    :param df_collection: Dictionary of Input DataFrame.
-    :return: Transformed DataFrame.
+    param df_collection: Dictionary of Input DataFrame.
+    return: Transformed DataFrame.
     """
 
     transform_collection = {}
@@ -138,7 +138,8 @@ def transform_data(df_collection):
 
 def load_data(transform_df_collection, output_config):
     """Collect data locally and write to CSV.
-    :param df: DataFrame to print.
+    param transform_df_collection: DataFrame to print.
+    param output_config: Config to write data to output paths
     :return: None
     """
     def write_csv_df(df=None, path='', header=True, num_partitions=1):
